@@ -18,3 +18,98 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
+
+.header {
+  font-family: PressStart2P, serif;
+
+}
+
+.header_logo-group {
+}
+
+.header__header {
+  font-size: 65px;
+  line-height: 65px;
+}
+
+.header__subheader {
+  font-size: 23px;
+  line-height: 23px;
+}
+
+.theme-menu {
+}
+
+.header__theme-menu {
+}
+
+.theme-menu__list {
+}
+
+.theme-menu__item {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.theme-menu__button {
+}
+
+.content {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+}
+
+.content__article {
+}
+
+.content__article-header {
+  font-weight: 700;
+}
+
+.content__article-image {
+}
+.filter-grayscale{
+  filter: grayscale(80%);
+}
+.filter-contrast{
+  filter: contrast(80%);
+}
+.filter-grayscale{
+  filter: grayscale(80%);
+}
+.filter-grayscale{
+  filter: grayscale(80%);
+}
+.filter-grayscale{
+  filter: grayscale(80%);
+}
+.filter-grayscale{
+  filter: grayscale(80%);
+}
+.filter-grayscale{
+  filter: grayscale(80%);
+}
+
+.content__article-content {
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.content__article-like-icon {
+}
+
+.content__like-button {
+}
+
+.footer {
+}
+
+.footer__diskette {
+}
+
+.footer__description {
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
