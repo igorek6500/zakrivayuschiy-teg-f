@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+/*:root{*/
+/*    --background-color: white;*/
+/*    --accent-color:white;*/
+
+/*}*/
+
+:root {
+    --background-color: white;
+    --accent-color: #d3d3d3;
+    --background-gradient:
+            repeating-linear-gradient(var(--accent-color), transparent 2px),
+            repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
+            linear-gradient(#e7e7e7 0.01%, #1a1a1a)
+;
+
+    --section-width: clamp(375px, 100%, 1440px);
+}
