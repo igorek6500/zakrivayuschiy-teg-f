@@ -1,3 +1,7 @@
+:root {
+
+}
+
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
@@ -17,7 +21,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  /*background-color: var(--background-color);*/
+  /*max-inline-size: 700px;*/
   background-image: var(--background-gradient);
   background-size: cover;
   background-position: center;
@@ -26,40 +30,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: var(--section-width);
+  /*width: var(--section-width);*/
+  padding: 0 1%;
+  gap: 50px;
+  color: var(--decoration-color);
 }
 
+
 .header {
+
+  margin-top: 100px;
+  padding-top: 136px;
   font-family: PressStart2P, serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: var(--section-width);
+  background: var(--background-color);
+  border: 2px solid var(--decoration-color);
 }
 
 .header_logo-group {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .header__header {
   font-size: 65px;
   line-height: 65px;
+  color: var(--decoration-color);
 }
 
 .header__subheader {
   font-size: 23px;
   line-height: 23px;
+  color: var(--decoration-color);
 }
 
 .theme-menu {
+  margin: 25px 0;
 }
 
 .header__theme-menu {
 }
 
 .theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .theme-menu__item {
@@ -68,9 +88,15 @@
 }
 
 .theme-menu__button {
+  position: relative;
+  background: inherit;
+  border: none;
 }
-.theme-menu__button:disabled::before {
+.theme-menu__button:disabled:before {
   content: "▶";
+  position: absolute;
+  left: -20px;
+
 }
 
 .content {
@@ -79,34 +105,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 50px;
   width: var(--section-width);
+  margin-top: 50px;
 }
 
 .content__article {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: var(--section-width);
+  /*width: var(--section-width);*/
+  background: var(--background-color);
+  border: 2px solid var(--decoration-color)
 }
 
 .content__article-header {
   font-weight: 700;
+  font-size: 18px;
+  padding: 3px 10px;
 }
 
 .image-wrapper{
   position: relative;
-
+  width: var(--section-width);
 }
 .content__article-image {
-  width: 700px;
-  height: 700px;
+  width: inherit;
+  height: calc(var(--section-width) - 1px);
+  /*height: 698px;*/
+  /*inset: auto;*/
+
   object-fit: cover;
   object-position: right;
+  border-top: 2px solid var(--decoration-color);
+  border-bottom: 2px solid var(--decoration-color);
+
+
 }
 .label{
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 25px;
+  right: 25px;
   content: "/html";
   background-color: inherit;
   color:  rgba(0,0,0,1);
@@ -115,6 +153,7 @@
   line-height: 14px;
   font-weight: 400;
   mix-blend-mode: hard-light;
+
   @supports (-webkit-text-stroke: 1px black) {
     -webkit-text-stroke: 1px rgba(255,255,255,1);
     text-shadow: none;
@@ -135,11 +174,11 @@
 .filter-contrast{
   filter: contrast(80%);
 }
-.filter-grayscale{
-  filter: grayscale(80%);
+.filter-brightness{
+  filter: brightness(75%);
 }
-.filter-grayscale{
-  filter: grayscale(80%);
+.filter-glow{
+  filter: glow(50%);
 }
 .filter-grayscale{
   filter: grayscale(80%);
@@ -152,28 +191,106 @@
 }
 
 .content__article-content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 21px;
+}
+
+.content__article-text {
+  display: block;
+}
+.content__article-text:first-child{
+  margin-bottom: 2px;
+}
+
+.content__article-buttons{
+  display: flex;
+  justify-content: end;
+  gap: 12px;
 }
 
 .content__article-like-icon {
 }
 
 .content__like-button {
+  border: none;
+  background: inherit;
+  width: max-content;
+  align-self: end;
+}
+
+.card__like-button{
+  border: 2px solid var(--decoration-color);
+  width: 169px;
+  background: inherit;
+}
+.button__text {
+  font-family: PressStart2P, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
 }
 
 .footer {
+  padding-bottom: 103px;
+
+}
+
+.footer__description {
+  padding: 15px 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: var(--background-color);
+  border: 2px solid var(--decoration-color);
 }
 
 .footer__diskette {
 }
 
-.footer__description {
-}
+
 
 .upper-case {
   text-transform: uppercase;
 }
 
-.button__text {
+@media (width <=720px) {
+  .page {
+
+  }
+
+}
+
+@media (width <= 500px) {
+  .page {
+    /*margin: 0;*/
+  }
+  .header {
+    padding-top: 120px;
+    width: 100%;
+  }
+  .header__header {
+    font-size: 49px;
+  }
+  .image-wrapper {
+    width: 100%;
+  }
+  .label {
+    right: 13px;
+  }
+  .footer {
+    padding-bottom: 100px;
+  }
+  .footer__description {
+    flex-direction: column;
+  }
+
+}
+
+.floppy {
+  color: var(--decoration-color);
 }

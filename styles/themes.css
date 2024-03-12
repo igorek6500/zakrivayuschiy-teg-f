@@ -21,6 +21,8 @@
             repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
             linear-gradient(#e7e7e7 0.01%, #1a1a1a)
 ;
+    --background-color: rgba(255, 255, 255, 1);
+    --decoration-color: rgba(0, 0, 0, 1);
 }
 
 :root.theme-dark {
@@ -30,5 +32,6 @@
             repeating-linear-gradient(var(--accent-color), transparent 2px),
             repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
             linear-gradient(#007f0c, #004306);
-
+    --background-color: rgba(0, 0, 0, 1);
+    --decoration-color: rgba(0, 204, 20, 1);
 }
