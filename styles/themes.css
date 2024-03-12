@@ -15,7 +15,7 @@
 /*}*/
 
 :root.theme-light {
-    --background-color: white;
+    --accent-color: #d3d3d3;
     --background-gradient:
             repeating-linear-gradient(var(--accent-color), transparent 2px),
             repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
@@ -26,7 +26,6 @@
 }
 
 :root.theme-dark {
-    --background-color: black;
     --accent-color: #000;
     --background-gradient:
             repeating-linear-gradient(var(--accent-color), transparent 2px),
