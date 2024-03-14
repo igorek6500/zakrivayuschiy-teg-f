@@ -11,7 +11,7 @@
     repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 
-    --section-width: clamp(375px, 100%, 700px);
+    --section-width: clamp(357px, 100%, 700px);
     --background-color: rgba(255, 255, 255, 1);
     --decoration-color: rgba(0, 0, 0, 1);
     --hover-element-color: var(--background-color);
