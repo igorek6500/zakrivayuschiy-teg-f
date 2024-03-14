@@ -50,7 +50,7 @@
 }
 
 .header__header {
-    font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);;
+    font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
     line-height: 65px;
     color: var(--decoration-color);
 }
