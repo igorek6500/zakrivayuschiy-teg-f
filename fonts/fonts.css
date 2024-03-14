@@ -2,9 +2,9 @@
 @font-face {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400 785; /* Веса шрифта, используемые в макете */
+    font-weight: 400 785;
     src: url('./Inter-Variable.woff2') format('woff2 support variations'),
-    url('./Inter-Variable.woff2') format('woff2-variations');
+    url('./Inter-Variable.woff2') format('woff2 supports variations');
     font-variation-settings: 'wght' 400, 'wght' 785;
 }
 
