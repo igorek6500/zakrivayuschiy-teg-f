@@ -16,16 +16,31 @@
     0% {
         left: -20px;
     }
-    /*25% {*/
-    /*    left: -19px;*/
-    /*}*/
-    /*50% {*/
-    /*    left: -18px;*/
-    /*}*/
-    /*75% {*/
-    /*    left: -17px;*/
-    /*}*/
     100% {
         left: -16px;
+    }
+}
+
+@keyframes heart-scale {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        transform: scale(150%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes sparkle-animation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

@@ -16,23 +16,52 @@
 
 :root.theme-light {
     --accent-color: #d3d3d3;
-    --background-gradient:
-            repeating-linear-gradient(var(--accent-color), transparent 2px),
-            repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
-            linear-gradient(#e7e7e7 0.01%, #1a1a1a)
-;
+    --background-gradient: repeating-linear-gradient(var(--accent-color), transparent 2px),
+    repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
     --background-color: rgba(255, 255, 255, 1);
     --decoration-color: rgba(0, 0, 0, 1);
     --hover-element-color: var(--background-color);
+    --adaptive-font-weight-bold: 700;
+    --adaptive-font-weight-normal: 400;
 }
 
 :root.theme-dark {
     --accent-color: #000;
-    --background-gradient:
-            repeating-linear-gradient(var(--accent-color), transparent 2px),
-            repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
-            linear-gradient(#007f0c, #004306);
+    --background-gradient: repeating-linear-gradient(var(--accent-color), transparent 2px),
+    repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
+    linear-gradient(#007f0c, #004306);
     --background-color: rgba(0, 0, 0, 1);
     --decoration-color: rgba(0, 204, 20, 1);
     --hover-element-color: var(--decoration-color);
+    --adaptive-font-weight-bold: 785;
+    --adaptive-font-weight-normal: 465;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent-color: #000;
+        --background-gradient: repeating-linear-gradient(var(--accent-color), transparent 2px),
+        repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
+        linear-gradient(#007f0c, #004306);
+        --background-color: rgba(0, 0, 0, 1);
+        --decoration-color: rgba(0, 204, 20, 1);
+        --hover-element-color: var(--decoration-color);
+        --adaptive-font-weight-bold: 785;
+        --adaptive-font-weight-normal: 465;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --accent-color: #d3d3d3;
+        --background-gradient: repeating-linear-gradient(var(--accent-color), transparent 2px),
+        repeating-linear-gradient(90deg, var(--accent-color), transparent 2px),
+        linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+        --background-color: rgba(255, 255, 255, 1);
+        --decoration-color: rgba(0, 0, 0, 1);
+        --hover-element-color: var(--background-color);
+        --adaptive-font-weight-bold: 700;
+        --adaptive-font-weight-normal: 400;
+    }
 }
